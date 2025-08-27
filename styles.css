@@ -1,0 +1,57 @@
+:root{
+    /* Colores de el sello setaoc */
+    --azul: #0066cc;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+}
+
+body{
+    font-family: "League Spartan", sans-serif;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+h1{
+    background-color: var(--azul);
+    color: var(--azul);
+    padding: 40px;
+    font-size: 60px;
+    text-align: center;
+}
+
+p.intro {
+    font-size: 3rem;
+    color: var(--negro);
+    text-align: center;
+}
+
+
+.logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.13);
+}
+
+@keyframes animacion-subtitulo {
+
+    from { background-color: var(--azul); }
+    to { background-color: var(--negro); }
+
+    from { color: var(--azul);}
+    to { color: var(--negro);}
+}
+
+h1{
+    animation-name: animacion-subtitulo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
